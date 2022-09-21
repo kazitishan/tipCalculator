@@ -10,8 +10,8 @@ public class tipcalculator {
         System.out.print("Number of people: ");
         int people = s.nextInt();
         double tipDecimal = tip / 100;
-        double totalTip = (bill * tipDecimal);
-        double totalBill = (bill + totalTip);
+        double totalTip = (bill * tipDecimal) + 0.005;
+        double totalBill = (bill + totalTip) + 0.005;
         double tipPerPerson = ((bill * tipDecimal) / people) + 0.005;
         double totalPerPerson = ((bill * (tipDecimal + 1)) / people) + 0.005;
         System.out.printf("Total Tip: $%.2f %n", totalTip);
