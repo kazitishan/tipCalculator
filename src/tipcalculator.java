@@ -12,8 +12,8 @@ public class tipcalculator {
         double tipDecimal = tip / 100;
         double totalTip = (bill * tipDecimal);
         double totalBill = (bill + totalTip);
-        double tipPerPerson = ((bill * tipDecimal) / people);
-        double totalPerPerson = ((bill * (tipDecimal + 1)) / people);
+        double tipPerPerson = ((bill * tipDecimal) / people) + 0.005;
+        double totalPerPerson = ((bill * (tipDecimal + 1)) / people) + 0.005;
         System.out.printf("Total Tip: $%.2f %n", totalTip);
         System.out.printf("Total Bill: $%.2f %n", totalBill);
         System.out.printf("Tip per person: $%.2f %n", tipPerPerson);
